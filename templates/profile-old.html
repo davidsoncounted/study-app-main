@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+</style>
+
+<h1>{{user.username}}</h1>
+
+<div class="container">
+    <div>
+        <!-- {{user.username}} -->
+        {% include 'topics-compo.html' %}
+    
+    </div>
+    
+    <div>
+    
+        {% include 'feed-compo.html' %}
+    </div>
+    
+    <div>
+        {% include 'activity-feed.html' %}
+        
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<!-- <h1>this is the home page</h1> -->
+
+<style>
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        /* justify-content: space-between; */
+    }
+
+</style>
+<!-- 
+<div class="home-container">
+    <div>
+     
+    </div>
+        <div>
+            {% if user.is_authenticated %}
+            <h1>welcome {{user.username}}</h1>
+
+            {% endif %}
+            <h5>{{room_count}} room available</h5>
+            <a href="room-form">Create Room</a><br>
+
+            {% include 'feed-compo.html' %}
+
+                 
+            
+        </div>
+        <div class="recent">
+           {% include 'activity-feed.html' %}
+        </div>
+</div> -->
+
+{% endblock %}
